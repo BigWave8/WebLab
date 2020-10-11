@@ -1,0 +1,128 @@
+.header{
+    flex-direction: row;
+    height: 60px;
+    margin-top: 50px;
+}
+
+.header__inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+.header__logo{
+    width: 49px;
+    height: 35px;
+}
+
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10vw;
+    width: 322px;
+}
+
+.header__nav-item{
+    color: #4B5D68;
+}
+
+.header__nav-item:first-child{
+    color: #212353;
+    font-weight: 800;
+}
+
+.request_demo_button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 210px;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    border: transparent;
+    padding: 0 29px;
+    color: #212353;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+}
+
+.burger {
+    font-size: 45px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media screen and (max-width:1330px){
+    .header{
+        margin: 40px 30px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .header{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .burger{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    .header__inner{
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-color: rgb(255, 192, 203);
+        top: 80px;
+        right: -100%;
+        text-align: center;
+        transition: .5s;
+    }
+    .header__nav{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 280px;
+        font-size: 2rem;
+        margin-left: 0;
+    }
+    .header__nav-item{
+        color: #212353;
+    }
+    #check:checked ~ .header__inner {
+        right: 0;
+        transition: 0.5s;
+    }
+    #check:not(:checked) ~ .header__inner {
+        right: -100%;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:500px){
+    .header__logo{
+        transform: scale(.6);
+    }
+    .burger{
+        transform: scale(.6);
+    }
+    .header__nav{
+        margin: 0px 15px 0px;
+    }
+}

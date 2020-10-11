@@ -1,0 +1,32 @@
+@keyframes rainbow_border{
+    0%   {border-color:rgb(255, 0, 0);}
+    8%   {border-color:rgb(255, 125, 0);}
+    16%  {border-color:rgb(255, 255, 0);}
+    24%  {border-color:rgb(125, 255, 0);}
+    32%  {border-color:rgb(0, 255, 0);}
+    40%  {border-color:rgb(0, 255, 125);}
+    49%  {border-color:rgb(0, 255, 255);}
+    57%  {border-color:rgb(0, 125, 255);}
+    65%  {border-color:rgb(0, 0, 255);}
+    74%  {border-color:rgb(125, 0, 255);}
+    83%  {border-color:rgb(255, 0, 255);}
+    91%  {border-color:rgb(255, 0, 125);}
+    100% {border-color:rgb(255, 0, 0);}
+}
+
+.pink_button:hover{
+    background: #9C69E2;
+    
+}
+
+.purple_button:hover{
+    background: #F063B8;
+}
+
+.header__nav-item:hover{
+    color: #212353;
+}
+
+.header__logo:hover{
+    opacity: 0;
+}

@@ -1,0 +1,112 @@
+.footer{
+    margin-top: 140px;
+    padding: 100px 140px 40px 140px;
+    border-top: 2px solid rgba(156,105,226,0.2);
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__up{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__down{
+    width: 80vw;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 410px;
+    height: 60px;
+}
+
+.pink_button{
+    background: #F063B8;
+    transition: 0.5s;
+}
+
+.footer__company{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 180%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+}
+
+.comments_button{
+    width: 60px;
+    height: 60px;
+    border: transparent;
+    border-radius: 50px;
+    border: 3px solid white;
+    background-color: rgba(156,105,226,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    animation-name: rainbow_border;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@media screen and (max-width:1000px){
+    .footer__up{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px){
+    .footer{
+        height: auto;
+        margin-top: 10px;
+        padding: 20px 0px 10px;
+    }
+    .title-2{
+        font-size: 16px;
+    }
+    .paragraph{
+        font-size: 12px;
+    }
+    .footer__buttons{
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        height: 100px;
+        margin-top: 10px;
+    }
+    .footer__down{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 125px;
+    }
+    .footer__company{
+        font-size: 8px;
+    }
+    .learn_more_button {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .request_demo_button{
+        width: 180px;
+        height: 40px;
+        font-size: 12px;
+    }
+}

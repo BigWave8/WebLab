@@ -1,0 +1,75 @@
+.intro{
+    background: url(../images/Intro-image.svg) no-repeat right bottom;
+    align-items: flex-start;
+    height: 564px;
+    margin-top: 130px;
+}
+
+.intro__inner-title{
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 110%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.paragraph_first{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+    margin: 50px 0;
+}
+
+.learn_more_button {
+    width: 170px;
+    height: 60px;
+    border: transparent;
+    border-radius: 50px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 160%;
+    color: white;
+}
+
+.purple_button{
+    background: #9C69E2;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:1250px){
+    .intro{
+        background: none;
+        align-items: center;
+    }
+    .intro__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .intro__inner-title{
+        font-size: 60px;
+    }
+    .paragraph_first{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:660px){
+    .intro{
+        height: auto;
+        margin: 20px 0px;
+    }
+    .intro__inner-title{
+        font-size: 32px;
+    }
+    .paragraph_first{
+        font-size: 10px;
+    }
+    .intro-paragraph{
+        width: 300px;
+    }
+}

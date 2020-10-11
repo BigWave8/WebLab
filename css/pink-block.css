@@ -1,0 +1,49 @@
+.pink{
+    background: url(../images/Girl-in-data.svg) no-repeat center;
+    display: flex;
+    align-items: flex-end;
+    height: 560px;
+}
+
+.pink__inner{
+    padding-top: 125px;
+    margin-right: 100px;
+}
+
+.pink__inner-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    margin: auto;
+    margin-bottom: 20px;    
+}
+
+@media screen and (max-width:1130px){
+    .pink{
+        background: rgba(240, 99, 184, 0.15);
+        align-items: center;
+    }
+    .pink__inner{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:660px){
+    .pink{
+        height: auto;
+        margin: 40px 0px;
+    }
+    .pink__inner{
+        padding: 25px 0;
+    }
+    .pink__inner-title{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:460px){
+    .pink__inner-title{
+        font-size: 20px;
+    }
+}
